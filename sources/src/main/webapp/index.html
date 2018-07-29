@@ -1,3 +1,25 @@
 <html>
-Hello it Works !!!
+
+<head>
+    <link rel="stylesheet" href="/resources/bootstrap-4.3.1/css/bootstrap.min.css"/> 
+    <link rel="stylesheet" href="/resources/jquery-ui-1.12.1/jquery-ui.min.css"/>
+</head>
+
+<body>
+    <div class="container-fluid">
+            Hello it Works !!!
+            <p>Date: <input type="text" id="datepicker"></p>
+    </div>
+
+</body>
+
+<script src="/resources/jquery-3.3.1/js/jquery-3.3.1.min.js"></script>
+<script src="/resources/bootstrap-4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="/resources/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="/resources/jquery-ui-1.12.1/datepicker-pt_BR.js"></script>
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+</script>
 </html>
