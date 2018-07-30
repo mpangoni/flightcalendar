@@ -7,8 +7,49 @@
 
 <body>
     <div class="container-fluid">
-            Hello it Works !!!
-            <p>Date: <input type="text" id="datepicker"></p>
+
+        <div class="row">
+            <div class="col">
+
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-sm-8">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-2">
+                                <label for="departureDate">Data de Partida</label>
+                                <input type="text" class="form-control" id="departureDate" placeholder="none">
+                            </div>
+                            <div class="form-group col-sm-2">
+                                    <label for="returnDate">Data de Retorno</label>
+                                    <input type="text" class="form-control" id="returnDate" placeholder="none">
+                            </div>
+                        </div>
+        
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label for="originCity">Cidade Origem</label>
+                                <input type="text" class="form-control" id="originCity" placeholder="none">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label for="destinyCity">Cidade Destino</label>
+                                    <input type="text" class="form-control" id="destinyCity" placeholder="none">
+                            </div>
+                        </div>    
+        
+                        <div class="form-row">
+                            <div class="form-group col-sm-2">
+                                    <button type="button" class="btn btn-primary">Procurar</button>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+        </div>
     </div>
 
 </body>
@@ -19,7 +60,10 @@
 <script src="/resources/jquery-ui-1.12.1/datepicker-pt_BR.js"></script>
 <script>
   $( function() {
-    $( "#datepicker" ).datepicker();
+    
+    $( "#departureDate" ).datepicker();
+    $( "#returnDate").datepicker();
+
   } );
 </script>
 </html>
