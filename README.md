@@ -16,7 +16,7 @@ O conteúdo está estruturado em 3 pastas:
 
 Para desenvolver esta aplicação, estão sendo usados os seguintes frameworks:
 
-<ol>
+<ul>
     <li> Bootstrap 4.x - Para prover a interface Web e a responsividade em diferentes devices/tamanhos de tela;
     <li> JQuery 3.3.1 -
     <li> JQuery UI 1.7 - Prove o "datepicker" usado na interface de pesquisa de vôos;
@@ -24,4 +24,4 @@ Para desenvolver esta aplicação, estão sendo usados os seguintes frameworks:
     <li> Spring-Boot - Toda a Infra estrutura de Aplication Server e REST;
     <li> HSQLDB - Já disponivel no Spring-Boot;
     <li> Maven - Para  Ciclo de Compilações.
-</ol>
+</ul>
