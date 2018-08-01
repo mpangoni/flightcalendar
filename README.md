@@ -1,8 +1,7 @@
 
 
-<hr/>
 
-<h2>Portugues<h2>
+<h2>Português<h2>
 
 <h2>Introdução</h2>
 
@@ -26,7 +25,7 @@ Para desenvolver esta aplicação, estão sendo usados os seguintes frameworks:
     <li> Maven - Para  Ciclo de Compilações.
 </ul>
 
-<h3>Filosofia de desenvolvimento<h3>
+<h3>Filosofia de desenvolvimento</h3>
     
 O Desenvolvimento desta aplicação está pautado em uma Arquitetura DDD. 
 
