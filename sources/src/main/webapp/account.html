@@ -1,0 +1,105 @@
+<html>
+
+<head>
+<link rel="stylesheet"
+	href="/resources/bootstrap-4.3.1/css/bootstrap.min.css" />
+<link rel="stylesheet"
+	href="/resources/jquery-ui-1.12.1/jquery-ui.min.css" />
+
+<link rel="stylesheet"
+	href="/resources/material-desing-icons-3.0.1/iconfont/material-icons.css" />
+</head>
+
+<body>
+
+		<nav
+		class="navbar navbar-expand-lg navbar-light bg-light border-bottom shadow-sm">
+		<a class="navbar-brand" href="search.html">Flight-Me</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-end"
+			id="navbarSupportedContent">
+			<ul class="navbar-nav ">
+				<li class="nav-item align-middle">
+					<a class="nav-link" href="shopcart.html"><i class="material-icons md-24">shopping_cart</i><span>Carrinho</span></a>
+				</li>
+				<li class="nav-item align-middle active">
+					<a class="nav-link" href="account.html"><i class="material-icons md-24">account_circle</i> Conta </a>
+				</li>
+				<li class="nav-item align-middle"><span>&nbsp;</span></li>
+			</ul>
+
+		</div>
+	</nav>
+
+	<div class="container-fluid m-3">
+
+		<div class="row justify-content-center">
+			<div class="col-sm-8 border">
+			<form>
+				<div class="form-row">
+					<div class="form-group col-sm-6">
+						<label for="email">Email</label> 
+						<input type="text" class="form-control" id="departureDate" placeholder="seu e-mail aqui">
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="form-group col-sm-6">
+						<label for="originCity">Nome Completo</label> 
+						<input type="text" class="form-control" id="fisrtName"	placeholder="nome">
+					</div>
+					<div class="form-group col-sm-6"> 	
+						<label for="originCity">&nbsp;</label> 
+						<input type="text" class="form-control" id="lastName"	placeholder="sobrenome">
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-sm-12">
+						<label for="destinyCity">Endere&ccedil;o</label> 
+						<input	type="text" class="form-control" id="mainAddress" placeholder="endere&ccedil;o">
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="form-group col-sm-12">
+						<input type="text" class="form-control" id="secndAddress" placeholder="complemento">
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="form-group col-sm-4">
+						<input type="text" class="form-control" id="city"	placeholder="Cidade">
+					</div>
+					<div class="form-group col-sm-4">
+							<input type="text" class="form-control" id="sate" placeholder="Estado">
+					</div>
+					<div class="form-group col-sm-4">
+							<input type="text" class="form-control" id="zipcode" placeholder="CEP">
+					</div>
+				</div>
+
+				<div class="form-row justify-content-end">
+					<div class="form-group">
+						<button type="button" class="btn btn-primary" id="goupdate">Atualizar</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		</div>
+	</div>
+
+</body>
+
+
+
+<script src="/resources/jquery-3.3.1/js/jquery-3.3.1.min.js"></script>
+<script src="/resources/bootstrap-4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="/resources/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="/resources/jquery-ui-1.12.1/datepicker-pt_BR.js"></script>
+
+</html>
