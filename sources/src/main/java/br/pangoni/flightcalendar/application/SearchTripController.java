@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,14 +22,15 @@ public class SearchTripController {
 	private TripQuery query;
 	
     @GetMapping(value="/search")
-    public List<Trip> queryTrips() {
+    public List<Trip> queryTrips(TripCriteria criteria) {
     	
-    	TripCriteria criteria = new TripCriteria("2018-08-15", "GRU", "2018-08-20", "LAX");
+    	criteria = new TripCriteria("2018-08-15", "GRU", "2018-08-20", "LAX");
     	
         return this.query.execute(criteria);
     }
 
-    public void selectTrip() {
+    @PostMapping(value="/select")
+    public void selectTrip(String id) {
 
     }
 }
