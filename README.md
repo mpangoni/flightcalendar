@@ -17,8 +17,9 @@ Para desenvolver esta aplicação, estão sendo usados os seguintes frameworks:
 
 <ul>
     <li> Bootstrap 4.x - Para prover a interface Web e a responsividade em diferentes devices/tamanhos de tela;
-    <li> JQuery 3.3.1 -
+    <li> JQuery 3.3.1 - Funcionalidades AjAX;
     <li> JQuery UI 1.7 - Prove o "datepicker" usado na interface de pesquisa de vôos;
+    <li> Handlebars 4.0.11 - JavaScript Templates Engine;
     <li> Material Desing by Google - Icones;
     <li> Spring-Boot - Toda a Infra estrutura de Application Server e REST;
     <li> HSQLDB - Já disponivel no Spring-Boot;
