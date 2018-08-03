@@ -1,6 +1,6 @@
 package br.pangoni.flightcalenader.infrastrucuture;
 
-import br.pangoni.flightcalendar.infrastructure.ContentProvider;
+import br.pangoni.flightme.infrastructure.content.ContentProvider;
 
 public class DummyContentProvider implements ContentProvider{
 

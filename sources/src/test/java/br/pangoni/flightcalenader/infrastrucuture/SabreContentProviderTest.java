@@ -2,7 +2,7 @@ package br.pangoni.flightcalenader.infrastrucuture;
 
 import org.junit.Test;
 
-import br.pangoni.flightcalendar.infrastructure.SabreContentProvider;
+import br.pangoni.flightme.infrastructure.content.SabreContentProvider;
 
 public class SabreContentProviderTest {
 
