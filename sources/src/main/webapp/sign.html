@@ -24,10 +24,10 @@
 		<div class="collapse navbar-collapse justify-content-end"
 			id="navbarSupportedContent">
 			<ul class="navbar-nav ">
-				<li class="nav-item align-middle">
+				<li class="nav-item align-middle disabled">
 					<a class="nav-link" href="shopcart.html"><i class="material-icons md-24">shopping_cart</i><span>Carrinho</span></a>
 				</li>
-				<li class="nav-item align-middle active">
+				<li class="nav-item align-middle disabled">
 					<a class="nav-link" href="account.html"><i class="material-icons md-24">account_circle</i> Conta </a>
 				</li>
 				<li class="nav-item align-middle"><span>&nbsp;</span></li>
@@ -39,55 +39,22 @@
 	<div class="container-fluid m-3">
 
 		<div class="row justify-content-center">
-			<div class="col-sm-8 border">
+			<div class="col-sm-4 border">
 			<form>
 				<div class="form-row">
-					<div class="form-group col-sm-6">
+					<div class="form-group col-sm-12">
 						<label for="email">Email</label> 
-						<input type="text" class="form-control" id="departureDate" placeholder="seu e-mail aqui">
+						<input type="text" class="form-control" id="email" placeholder="seu e-mail aqui">
 					</div>
-				</div>
 
-				<div class="form-row">
-					<div class="form-group col-sm-6">
-						<label for="originCity">Nome Completo</label> 
-						<input type="text" class="form-control" id="fisrtName"	placeholder="nome">
-					</div>
-					<div class="form-group col-sm-6"> 	
-						<label for="originCity">&nbsp;</label> 
-						<input type="text" class="form-control" id="lastName"	placeholder="sobrenome">
-					</div>
 				</div>
 				<div class="form-row">
 					<div class="form-group col-sm-12">
-						<label for="destinyCity">Endere&ccedil;o</label> 
-						<input	type="text" class="form-control" id="mainAddress" placeholder="endere&ccedil;o">
+						<button id="gosign" type="button" class="btn btn-primary" id="goupdate">Resgistrar</button>
 					</div>
+
 				</div>
 
-				<div class="form-row">
-					<div class="form-group col-sm-12">
-						<input type="text" class="form-control" id="secndAddress" placeholder="complemento">
-					</div>
-				</div>
-
-				<div class="form-row">
-					<div class="form-group col-sm-4">
-						<input type="text" class="form-control" id="city"	placeholder="Cidade">
-					</div>
-					<div class="form-group col-sm-4">
-							<input type="text" class="form-control" id="sate" placeholder="Estado">
-					</div>
-					<div class="form-group col-sm-4">
-							<input type="text" class="form-control" id="zipcode" placeholder="CEP">
-					</div>
-				</div>
-
-				<div class="form-row justify-content-end">
-					<div class="form-group">
-						<button type="button" class="btn btn-primary" id="goupdate">Atualizar</button>
-					</div>
-				</div>
 			</form>
 		</div>
 		</div>
@@ -101,5 +68,22 @@
 <script src="/resources/bootstrap-4.3.1/js/bootstrap.bundle.min.js"></script>
 <script src="/resources/jquery-ui-1.12.1/jquery-ui.min.js"></script>
 <script src="/resources/jquery-ui-1.12.1/datepicker-pt_BR.js"></script>
+
+<script>
+
+$("#gosign").click(function(){
+
+	$.ajax({
+	    type: 'POST',
+	    url: '/account/sign',
+	    data: $("#email").val(), // or JSON.stringify ({name: 'jonas'}),
+	    success: function(data) { alert('data: ' + data); },
+	    contentType: "application/json",
+	    dataType: 'json'
+	});
+	
+});
+
+</script>
 
 </html>
