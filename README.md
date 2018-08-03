@@ -42,4 +42,4 @@ Outro ponto com relação ao desenvolvimento da Aplicação, é utilizar apenas 
 
 <h3>Documentação e Diagramas</h3>
 
-Todos os Diagramas UML deste projeto foram criados usando <h href="http://alexdp.free.fr/violetumleditor/page.php">Violet UML Editor</a>.
+Todos os Diagramas UML deste projeto foram criados usando <a href="http://alexdp.free.fr/violetumleditor/page.php">Violet UML Editor</a>.
