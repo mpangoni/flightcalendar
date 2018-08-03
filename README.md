@@ -39,3 +39,7 @@ O Integração entre a Interface Web e a Aplicação se dá apenas por Chamadas 
 </ul>
 
 Outro ponto com relação ao desenvolvimento da Aplicação, é utilizar apenas Frameworks e APIs fornecidos pelo Spring-Boot. Exemplos disto é usar o <i>Jakson</i> para consumir os JSONs com informações aereas provenientes da <b>SABRE</b> , e usar o </i>HSQLDB</i> já embutido no próprio Spring-Boot como banco de dados.
+
+<h3>Documentação e Diagramas</h3>
+
+Todos os Diagramas UML deste projeto foram criados usando <h href="http://alexdp.free.fr/violetumleditor/page.php">Violet UML Editor</a>.
