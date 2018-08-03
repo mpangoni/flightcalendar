@@ -20,7 +20,7 @@ import br.pangoni.flightme.domain.model.account.PersonalData;
 public class AccountRepositoryJdbcTemplate implements AccountRepository{
 
 	private static final String QUERY_IS_NEW_ACCOUNT =
-			"SELECT COUNT(email) FROM acounts WHERE email = ?";
+			"SELECT COUNT(email) FROM accounts WHERE email = ?";
 	
 	private static final String QUERY_FOR_ACCOUNT =
 			"SELECT id, email, "
