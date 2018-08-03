@@ -7,7 +7,7 @@ CREATE TABLE accounts
 	firstName varchar(128) DEFAULT NULL,
 	lastName varchar(128) DEFAULT NULL,
 	
-	fisrtAddress varchar(128) DEFAULT NULL,
+	firstAddress varchar(128) DEFAULT NULL,
 	secondAddress varchar(128) DEFAULT NULL,
 	
 	city varchar(64) DEFAULT NULL,
