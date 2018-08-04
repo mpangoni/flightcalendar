@@ -1,4 +1,4 @@
-CREATE TABLE accounts
+CREATE TABLE IF NOT EXISTS accounts
 (
 	id IDENTITY,
 	
@@ -17,4 +17,4 @@ CREATE TABLE accounts
 	PRIMARY KEY(id) 
 );
 
-CREATE UNIQUE INDEX email_idx on accounts (email);
+CREATE UNIQUE INDEX IF NOT EXISTS email_idx ON accounts (email);

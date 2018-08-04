@@ -73,11 +73,22 @@
 
 $("#gosign").click(function(){
 
+	var handleAccount = function(account) {
+		
+		sessionStorage.setItem('account', JSON.stringify(account));
+		
+		if(account.newAccount) {
+			location.replace( "./account.html" );			
+		}else {
+			location.replace( "./search.html" );	
+		}
+	}
+	
 	$.ajax({
 	    type: 'POST',
-	    url: '/account/sign',
+	    url: './account/sign',
 	    data: $("#email").val(), // or JSON.stringify ({name: 'jonas'}),
-	    success: function(data) { alert('data: ' + data); },
+	    success: handleAccount,
 	    contentType: "application/json",
 	    dataType: 'json'
 	});

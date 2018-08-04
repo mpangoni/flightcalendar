@@ -44,7 +44,7 @@
 				<div class="form-row">
 					<div class="form-group col-sm-6">
 						<label for="email">Email</label> 
-						<input type="text" class="form-control" id="departureDate" placeholder="seu e-mail aqui">
+						<input type="text" class="form-control" id="email" placeholder="seu e-mail aqui">
 					</div>
 				</div>
 
@@ -61,13 +61,13 @@
 				<div class="form-row">
 					<div class="form-group col-sm-12">
 						<label for="destinyCity">Endere&ccedil;o</label> 
-						<input	type="text" class="form-control" id="mainAddress" placeholder="endere&ccedil;o">
+						<input	type="text" class="form-control" id="firstAddress" placeholder="endere&ccedil;o">
 					</div>
 				</div>
 
 				<div class="form-row">
 					<div class="form-group col-sm-12">
-						<input type="text" class="form-control" id="secndAddress" placeholder="complemento">
+						<input type="text" class="form-control" id="secondAddress" placeholder="complemento">
 					</div>
 				</div>
 
@@ -102,4 +102,10 @@
 <script src="/resources/jquery-ui-1.12.1/jquery-ui.min.js"></script>
 <script src="/resources/jquery-ui-1.12.1/datepicker-pt_BR.js"></script>
 
+<script>
+var account = JSON.parse(sessionStorage.getItem('account'));
+
+$("#email").val(account.email);
+
+</script>
 </html>
